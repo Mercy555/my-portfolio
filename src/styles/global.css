@@ -1,0 +1,74 @@
+/* Root variables for easy theming */
+:root {
+    --bg-color: #121212;
+    --text-primary: #E0E0E0;
+    --text-secondary: #B0B0B0;
+    --accent-color: #BB86FC;
+    --border-color: #2C2C2C;
+    --accent-hover: #dac4f5; /* ~10-15% lighter */
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+/* Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: var(--text-primary);
+}
+
+/* Links */
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--accent-hove);
+}
+
+/* Buttons */
+button {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: var(--font-heading);
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--accent-hover);
+}
+
+/* Dividers / Borders */
+hr, .divider {
+    border: 1px solid var(--border-color);
+}
+
+/* Optional: Utility classes */
+.text-secondary {
+    color: var(--text-secondary);
+}
+
+.container {
+    width: 90%;
+    max-width: 120%;
+    margin: 0 auto;
+}
