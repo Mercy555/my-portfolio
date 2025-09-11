@@ -10,11 +10,11 @@ function Navbar() {
             <a href="#home" className="navbar__logo">Mercy.dev</a>
 
             <nav className={`navbar__links ${isOpen ? 'open' : ''}`}>
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Projects</a>
-                <a href="#">Skills</a>
-                <a href="#">Contact</a>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
             </nav>
 
             <div className="navbar__toggle" onClick={toggleMenu}>
