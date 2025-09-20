@@ -1,7 +1,6 @@
-import { FaBook, FaBookOpen, FaCode, FaFilm } from 'react-icons/fa';
-import { GiSprout } from 'react-icons/gi';
 import { BiPlanet } from 'react-icons/bi';
-import { TfiThought } from 'react-icons/tfi';
+import { FaBook, FaBookOpen, FaCode, FaFilm, FaPencilAlt } from 'react-icons/fa';
+import { GiSprout } from 'react-icons/gi';
 import '../styles/About.css';
 
 const education = [
@@ -37,12 +36,12 @@ const education = [
 
 const interests = [
     { name: 'Coding', icon: <FaCode />},
-    { name: 'Reading', icon: <FaBook />},
-    { name: 'English', icon: <FaBookOpen />},
+    { name: 'Reading', icon: <FaBookOpen />},
+    { name: 'English', icon: <FaBook />},
     { name: 'Self-Development', icon: <GiSprout />},
     { name: 'Space', icon: <BiPlanet />},
     { name: 'Movies', icon: <FaFilm />},
-    { name: 'Philosophy', icon: <TfiThought style={{strokeWidth: 0.7}}/>}
+    { name: 'Journaling', icon: <FaPencilAlt />}
 ];
 
 function IntCardGrid({ interests }) {

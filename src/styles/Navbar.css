@@ -1,5 +1,8 @@
 .navbar {
-    background-color: var(--bg-color);
+    background: rgba(18, 18, 18, 0.788); /* black glass */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Safari */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     color: var(--text-primary);
     display: flex;
     justify-content: space-between;
@@ -8,7 +11,6 @@
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-bottom: 1px solid var(--border-color);
 }
 
 .navbar__logo {

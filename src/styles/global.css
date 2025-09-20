@@ -6,6 +6,10 @@
     --accent-color: #BB86FC;
     --border-color: #2C2C2C;
     --accent-hover: #dac4f5; /* ~10-15% lighter */
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --black-glass-bg: rgba(18, 18, 18, 0.788);
+    --glass-blur: blur(10px); /* for 'backdrop-filter' and '-webkit-backdrop-filter (Safari)' */
+    --glass-border: rgba(255, 255, 255, 0.1);
     --font-heading: 'Orbitron', sans-serif;
     --font-body: 'Roboto Mono', monospace;
 }
@@ -41,34 +45,54 @@ a:hover {
     color: var(--accent-hover);
 }
 
-/* Buttons */
-/* button {
-    background-color: var(--accent-color);
-    color: var(--bg-color);
-    border: none;
-    padding: 0.6rem 1.2rem;
-    border-radius: 6px;
-    cursor: pointer;
-    font-family: var(--font-heading);
-    transition: background-color 0.3s;
+/* glass */
+.glass {
+    background-color: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--glass-border);
 }
 
-button:hover {
-    background-color: var(--accent-hover);
-} */
-
-/* Dividers / Borders */
-hr, .divider {
-    border: 1px solid var(--border-color);
+/* black glass */
+.black-glass {
+    background-color: var(--black-glass-bg);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--glass-border);
 }
 
-/* Optional: Utility classes */
-.text-secondary {
-    color: var(--text-secondary);
+.main-section {
+    padding: 2rem 10rem;
 }
 
-.container {
-    width: 90%;
-    max-width: 120%;
-    margin: 0 auto;
+/* Section Padding */
+#about, #projects, #skills, #contact {
+    padding: 2rem 0;
+}
+
+/* ----- Responsive Breakpoints ------ */
+@media (max-width: 575px) {
+    .main-section {
+        padding: 2rem 2rem;
+    }
+
+    .modal {
+        margin: 2rem;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .main-section {
+        padding: 2rem 4rem;
+    }
+
+    .modal {
+        margin: 4rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .main-section {
+        padding: 2rem 6rem;
+    }
 }

@@ -6,10 +6,6 @@
     margin-bottom: 2rem;
 }
 
-.about__container {
-    padding: 4rem 10rem;
-}
-
 .about__summary {
     margin-top: 2rem;
 }
@@ -46,17 +42,11 @@
 }
 
 .about__education .card:hover {
-    border: 1px solid rgb(199, 199, 199);
+    border: 1px solid var(--accent-hover);
 }
 
 .about__education .card h4 {
     color: var(--accent-color);
-}
-
-@media (max-width: 768px) {
-    .about__container {
-        padding: 2rem;
-    }
 }
 
 /* Interests */
@@ -91,4 +81,3 @@
 .about__interests .icon {
     color: var(--accent-color);
 }
-
