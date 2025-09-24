@@ -1,0 +1,29 @@
+.skill-orbs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem 0;
+}
+
+.orb {
+  background: linear-gradient(135deg, #1e1e1e, #2a2a2a);
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 0 8px rgba(187, 134, 252, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.orb:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 0 15px var(--accent-color);
+  background: linear-gradient(135deg, #2a2a2a, #1e1e1e);
+}
+
+.python-icon {
+  width: 1.2rem;
+}

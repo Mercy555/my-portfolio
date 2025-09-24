@@ -23,6 +23,7 @@ function ProjectModal({ project, onClose }) {
                         </div>
                     )}
                 </div>
+                <a href={project.gitHubLink}>GitHub Link</a>
             </div>
         </div>
     );
